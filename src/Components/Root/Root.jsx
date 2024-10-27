@@ -5,8 +5,10 @@ import Hader from "../Hader/Hader";
 const Root = () => {
   return (
     <div>
-      <Hader></Hader>
-      <Outlet></Outlet>
+      <div className="max-w-6xl mx-auto">
+        <Hader></Hader>
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
     </div>
   );

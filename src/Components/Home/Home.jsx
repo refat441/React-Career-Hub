@@ -9,7 +9,6 @@ const Home = () => {
       <Banner></Banner>
       <CateforyList></CateforyList>
       <FeaturedJobs></FeaturedJobs>
-      <p>home page</p>
     </div>
   );
 };
