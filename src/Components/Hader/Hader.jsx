@@ -18,6 +18,9 @@ const Hader = () => {
       <li>
         <NavLink to="/Blogs">Bloge</NavLink>
       </li>
+      <li>
+        <NavLink to="/Login">Login</NavLink>
+      </li>
     </>
   );
   return (

@@ -6,6 +6,8 @@ import Root from "./Components/Root/Root.jsx";
 import Home from "./Components/Home/Home.jsx";
 import ApplyedJobs from "./Components/ApplyedJobs/ApplyedJobs.jsx";
 import ErrorPage from "./Components/Error/ErrorPage.jsx";
+import Login from "./Components/Login/Login.jsx";
+import Profile from "./Components/Login/Profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: "/applied",
         element: <ApplyedJobs></ApplyedJobs>,
+      },
+      {
+        path: "/Login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
       // {
       //   path: "/Statistics"
