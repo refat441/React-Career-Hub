@@ -19,7 +19,7 @@ const Login = () => {
       setError("");
     }
     console.log("username:", formData.userName, "password:", formData.password);
-    fetch("https://dummyjson.com/auth/login", {
+    fetch("'https://dummyjson.com/auth/login'", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -33,6 +33,12 @@ const Login = () => {
       .then((user) => {
         console.log(user);
         if (user.message) {
+          //for coustom mage by font end
+          // if (user.message === "Invalid credentials") {
+          //   setError("mara khao");
+          // } else {
+          //   setError(user.message);
+          // }
           setError(user.message);
         } else {
           localStorage.setItem("token", user.accessToken);
